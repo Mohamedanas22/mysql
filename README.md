@@ -15,48 +15,6 @@ In this project,we provide step-by-step instructions for setting up a web server
 
 Installation:
 
-1. **Install Apache HTTP Server**:
-    ```bash
-    sudo dnf install httpd
-    ```
-
-2. **Enable and start the Apache service**:
-    ```bash
-    sudo systemctl enable --now httpd
-    ```
-
-3. **Install MySQL and PHPMyAdmin**:
-    ```bash
-    sudo dnf install mysql mysql-server phpmyadmin
-    ```
-
-4. **Enable and start the MySQL service**:
-    ```bash
-    sudo systemctl enable --now mysql
-    ```
-
-Configure Firewall:
-
-1. **Add port 80 (HTTP) to the firewall rules**:
-    ```bash
-    sudo firewall-cmd --add-port=80/tcp --permanent
-    sudo firewall-cmd --reload
-    ```
-
-Access MySQL:
-
-1. **Log in to MySQL as the root user**:
-    ```bash
-    mysql -u root -p
-    ```
-
-Configure PHPMyAdmin:
-
-1. **Edit the PHPMyAdmin configuration file** to allow access from all hosts:
-    ```bash
-    sudo sed -i 's/local/"all granted"/g' /etc/httpd/conf.d/phpmyadmin.conf
-    ```
-
 Executing the Process Through Bash Scripting:
 
 You can automate the entire setup process using a bash script. Here's an example script:
