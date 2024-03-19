@@ -1,9 +1,8 @@
-# Apache-server-
+# MySQL-server-
 Web Server Setup with Apache, MySQL, and phpMyAdmin
 # Setting Up Web Server and MySQL on CentOS 8
 
 Table of Contents:
-
 - Introduction
 - Installation
 - Usage
